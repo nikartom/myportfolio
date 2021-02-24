@@ -1,0 +1,98 @@
+.comments {
+    margin-top: 3rem;
+}
+
+.comments__title {
+    font-size: 1.6rem;
+    color: $white;
+    font-weight: 500;
+
+    margin-bottom: 2rem;
+}
+
+.comments__form {
+    margin-bottom: 1.2rem;
+    background-color: $primary;
+    width: 100%;
+    position: relative;
+}
+
+.comments__input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+
+    background: none;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #3f3f3f;
+
+    font-family: inherit;
+    font-size: 1.4rem;
+    color: $white;
+
+    &::placeholder {
+        font-size: 1.4rem;
+        color: rgba($white, .4);
+    }
+}
+
+.comments__content {
+    margin-top: 5rem;
+    font-size: 1.2rem;
+    color: $white;    
+}
+
+.comments__item {
+    margin-bottom: 3rem;
+
+    //если в блоке комменты есть еще один блок то
+    > .comments__content {
+        padding-left: 3rem;
+        margin-top: 3rem;
+    }
+}
+
+.comments__header {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.comments__avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.comments__author {
+    line-height: 1.4;
+    flex-grow: 1;
+    padding-left: 1.5rem;
+}
+
+.comments__name {
+    font-weight: 500;
+}
+
+.comments__date {
+    color: $sec_text;
+}
+
+.comments__text {
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.comments__replay {
+    font-family: inherit;
+    color: $blue;
+
+    background: none;
+    border: none;
+    padding: 0;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

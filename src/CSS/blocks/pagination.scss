@@ -1,0 +1,40 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+.pagination__item {
+    margin: 0 .5rem;
+}
+
+.pagination__link {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+
+    background-color: $black_items;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba($black, .15);
+
+    font-size: 1.4rem;
+
+    //делаем текст по центру способом межстрочного простарнства
+    //размером в в размер блока
+    line-height: 4rem;
+    
+    color: $white;
+    text-align: center;
+    text-decoration: none;
+
+    transition: bacground-color .2s linear;
+
+    &:hover {
+        background-color: lighten($black_items, 2%);
+    }
+
+    &.active {
+        background-color: $blue;
+        box-shadow: 0 0 10px rgba($blue, .15);
+    }
+}

@@ -1,0 +1,47 @@
+@mixin post_border {
+    background-color: $primary;
+    box-shadow: 0 15px 25px rgba($black, .35);    
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+@mixin post_title {
+    font-size: 1.8rem;
+    color: $white;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+@mixin btn($color, $padding: 1em 2em) {
+    display: block;
+    padding: $padding;
+
+    background: $secondary;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: 1.2rem;
+    line-height: 1.1;
+    font-weight: 500;
+    color: $white;
+    text-decoration: none;
+
+    background-color: $color;
+    box-shadow: 0 7px 17px -10px rgba($color,.3);
+
+    transition: background-color .2s linear;
+
+    &:hover {
+        background-color: darken($color, 10%);
+    }
+}
+
+
+//Media
+@mixin breakpoint($mw) {
+    @media screen and (max-width: $mw) {
+        @content;
+    }
+}
